@@ -1,0 +1,52 @@
+{
+	format:'simple'
+	text: [
+		{
+			text:'I am doing good.',
+			imageUrl:"",
+			button:[
+				{
+					text:"Button 1",
+					url:'',
+					usePayload:true,
+					payload:''
+				},
+				{
+					text:"Button 2",
+					url:'',
+					usePayload:false,
+					payload:''
+				}
+			]
+		},
+		{
+			text:'Please enter date.',
+			imageUrl:"",
+			button:[
+				{
+					text:"Button 3",
+					url:'',
+					usePayload:true,
+					payload:''
+				},
+				{
+					text:"Button 4",
+					url:'',
+					usePayload:false,
+					payload:''
+				}
+			]
+		}
+	],
+	bubbleButton: [
+		{
+		   "text":"text1"
+		   "payload":"message 1"
+		},
+		{
+		   "text":"text2"
+		   "payload":"message 2"
+		}
+	],
+	accept:date
+}
