@@ -1,5 +1,7 @@
 'use strict'
+require('dotenv').config({ path: __dirname+'/env/.env' });
 
+//This part of code has to be removed from here
 var DialogflowHandler = require('./dialogflowHandler/dialogflowHandler.js').DialogflowHandler;
 var dialogflowHandler = new DialogflowHandler('d69c2a64140b46bd8b30ff5078a6cf80');
 
@@ -30,9 +32,9 @@ app.post('/api/message/:sessionId', (req, res) => {
   //api to get request 
 })
 
-app.get('/api/message/:sessionId', (req, res) => {
+/* app.get('/api/message/:sessionId', (req, res) => {
   res.send('Kick up for the show'+req.params.sessionId)
-})
+}) */
 
 app.listen(port);
 
